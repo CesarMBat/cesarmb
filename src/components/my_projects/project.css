@@ -49,8 +49,11 @@ h2{
     .div-project{
         width: 90vw;
         display: block;
-        height: 50vh;
+        height: auto;
         font-size: 1.2rem
+    }
+    .div-project h2{
+        font-size: 2rem;
     }
     .div-2 p{
         width: auto;
