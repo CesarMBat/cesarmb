@@ -13,20 +13,20 @@ h2{
     border-radius: 5rem;
     margin-bottom: 2vh;
     display: flex;
-    padding: 2rem;
+    padding: 2.5rem;
     margin: 1rem;
     align-items: center;
     width: 40vw;
-    height: 30vh;
+    height: 40vh;
 }
 .main-proj{
-    height: 110vh;
+    height: 120vh;
     justify-content: center;
     display: flex;
     flex-flow: column nowrap;
 }
 .section-proj{
-    height: 80vh;
+    height: 85vh;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
@@ -35,6 +35,7 @@ h2{
 }
 .div-2 p{
     width: 20vw;
+    padding: 1rem;
     
 }
 @media (max-width: 600px){
