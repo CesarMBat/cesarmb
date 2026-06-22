@@ -40,16 +40,17 @@ h2{
 }
 @media (max-width: 600px){
     .main-proj{
-        height: 200vh;
+        height: 220vh;
     }
     .section-proj{
         display: block;
-        height: 200vh;
+        height: 220vh;
     }
     .div-project{
         width: 90vw;
         display: block;
-        height: 350px;
+        height: 50vh;
+        font-size: 1.2rem
     }
     .div-2 p{
         width: auto;
