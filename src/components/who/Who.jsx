@@ -22,13 +22,13 @@ const Who = () => {
           <section className="section-right">
             <Carousel controls={false} indicators={false}>
               <Carousel.Item interval={1500}>
-                <img src={eu_imgs.a} alt="" height={'600vh'} className="d-block"/>
+                <img src={eu_imgs.a} alt="" className="d-block w-100 carousel-img"/>
               </Carousel.Item>
               <Carousel.Item interval={1500}>
-                <img src={eu_imgs.b} alt="" height={'600vh'} className="d-block"/>
+                <img src={eu_imgs.b} alt="" className="d-block w-100 carousel-img"/>
               </Carousel.Item>
               <Carousel.Item interval={1500}>
-                <img src={eu_imgs.c} alt="" height={'600vh'} className="d-block"/>
+                <img src={eu_imgs.c} alt="" className="d-block w-100 carousel-img"/>
               </Carousel.Item>
             </Carousel>
           </section>

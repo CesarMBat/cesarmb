@@ -1,64 +1,88 @@
-.main-swot{
-    height: 100vh;
+.main-swot {
+    min-height: 100vh;
     display: flex;
-    flex-flow: column nowrap;
     justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
 }
-.section-swot{
-    margin-top: 3rem;
+
+.section-swot {
     display: grid;
-    grid-template: 50% 50% / 50% 50%;
-    font-size: 1.5rem;
+    /* Cria os 4 blocos lado a lado em linha no desktop */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1200px;
+    font-size: 1.1rem;
 }
-.pswot1::first-letter{
-    color:blueviolet
+
+.pswot1::first-letter {
+    color: blueviolet
 }
-.pswot2::first-letter{
+
+.pswot2::first-letter {
     color: rgb(76, 76, 240)
 }
-.pswot3::first-letter{
+
+.pswot3::first-letter {
     color: #ff9900
 }
-.pswot4::first-letter{
+
+.pswot4::first-letter {
     color: red
 }
-.p-swot::first-letter{
+
+.p-swot::first-letter {
     font-size: 3rem;
 }
-.grid-swot1{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    width: 40vw;
-    margin-left: 20vw;
-}
-.grid-swot2{
-    grid-column: 2/2;
-    grid-row: 1/2;
-    width: 40vw;
-}
-.grid-swot3{
-    grid-column: 1/2;
-    grid-row: 2/2;
-    width: 40vw;
-    margin-left: 20vw;
 
+.p-swot {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
 }
-.grid-swot4{
-    grid-column: 2/2;
-    grid-row: 2/2;
-    width: 40vw;
 
+.p-swot::first-letter {
+    font-size: 2.5rem;
 }
-@media (max-width: 600px){
-    .main-swot{
-        height: 170vh;
+
+.grid-swot1,
+.grid-swot2,
+.grid-swot3,
+.grid-swot4 {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+    /* opcional: destaca os quadros */
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.section-swot ul {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.section-swot li {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 900px) {
+    .section-swot {
+        /* Transiciona para 2x2 em telas intermediárias */
+        grid-template-columns: repeat(2, 1fr);
     }
-    .section-swot{
-        display: block;
-        height: 170vh;
+}
+
+@media (max-width: 820px) {
+    .main-swot {
+        height: auto;
+        min-height: 100vh;
+        padding: 3rem 1rem;
     }
-    .grid-swot1, .grid-swot2, .grid-swot3, .grid-swot4 {
-        margin: 0;
-        width: 90vw;
+
+    .section-swot {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
+
 }

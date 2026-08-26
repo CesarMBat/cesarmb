@@ -7,42 +7,39 @@ import { useTranslation } from 'react-i18next';
 
 
 const Skills = () => {
-  const {t} = useTranslation()
+  const { t } = useTranslation()
   return (
     <div>
       <main className="main-skills">
         <section className="section-left">
-            <section className="section-explain">
-              <h1>{t("hab")}</h1>
-              <p>{t("pH")}</p>
-            </section>
-            <section className="section-skills">
-              <ul>
-                <li>{t("liH1")}</li>
-                <li>{t("liH2")}</li>
-                <li>{t("liH3")}</li>
-                <li>{t("liH4")}</li>
-                <li>{t("liH5")}</li>
-                <li>{t("liH6")}</li>
-                <li>{t("liH7")}</li>
-              </ul>
-            </section>
+          <h1>{t("hab")}</h1>
+          <section className="section-skills">
+            <ul>
+              <li>{t("liH1")}</li>
+              <li>{t("liH2")}</li>
+              <li>{t("liH3")}</li>
+              <li>{t("liH4")}</li>
+              <li>{t("liH5")}</li>
+              <li>{t("liH6")}</li>
+              <li>{t("liH7")}</li>
+            </ul>
+          </section>
         </section>
         <section className="section-right">
-            <Carousel controls={false} indicators={false}>
-                <Carousel.Item interval={1500}>
-                    <img src={img_skills.a} className="d-block svg"/>
-                </Carousel.Item>
-                <Carousel.Item interval={1500}>
-                    <img src={img_skills.b} className="d-block svg"/>
-                </Carousel.Item>
-                <Carousel.Item interval={1500}>
-                    <img src={img_skills.c} className="d-block svg"/>
-                </Carousel.Item>
-                <Carousel.Item interval={1500}>
-                    <img src={img_skills.d} className="d-block svg"/>
-                </Carousel.Item>
-            </Carousel>
+          <Carousel controls={false} indicators={false}>
+            <Carousel.Item interval={1500}>
+              <img src={img_skills.a} className="d-block w-100 svg" />
+            </Carousel.Item>
+            <Carousel.Item interval={1500}>
+              <img src={img_skills.b} className="d-block w-100 svg" />
+            </Carousel.Item>
+            <Carousel.Item interval={1500}>
+              <img src={img_skills.c} className="d-block w-100 svg" />
+            </Carousel.Item>
+            <Carousel.Item interval={1500}>
+              <img src={img_skills.d} className="d-block w-100 svg" />
+            </Carousel.Item>
+          </Carousel>
         </section>
       </main>
     </div>

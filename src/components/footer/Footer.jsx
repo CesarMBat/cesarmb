@@ -17,7 +17,7 @@ const Footer = () => {
         <section className='section-right-footer'>
           <div className='div-socials'>
             <a href="https://www.linkedin.com/in/cesar-morsoleto-batista-3a5b4b1a9/" target='_blank' rel="noopener noreferrer">
-              <img src={socials.b} alt="LinkedIn" />
+              <img className='img-link' src={socials.b} alt="LinkedIn" />
             </a>
             <a href="https://www.instagram.com/czar_batista/" target='_blank' rel="noopener noreferrer">
               <img className='img-insta' src={socials.a} alt="Instagram" />

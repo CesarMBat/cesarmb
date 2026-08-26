@@ -90,17 +90,15 @@
   transform: scale(1.15);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 820px) {
   body {
     padding-top: 60px;
-    /* Menor espaçamento para a barra mobile */
   }
 
   .div-lang {
     display: flex;
     flex-direction: column;
     gap: 6px;
-    /* Espaçamento constante entre as bandeiras */
     align-items: center;
     justify-content: center;
     margin: 0 auto;
@@ -109,6 +107,5 @@
 
   .div-spc {
     height: 3rem;
-    /* Espaçamento vertical reduzido em dispositivos móveis */
   }
 }

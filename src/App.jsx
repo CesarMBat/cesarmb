@@ -144,7 +144,6 @@ function App() {
       <div ref={sectionRefs.ref_Proje} id="proje">
         <Projects />
       </div>
-      <div style={{ height: "20rem" }}></div>
       <Footer />
     </>
   );

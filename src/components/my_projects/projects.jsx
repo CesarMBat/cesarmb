@@ -22,7 +22,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={git} alt="" />
+                  <img src={git} alt="Logo do GitHub" className="git w-100"/>
                 </a>
               </div>
             </div>
@@ -36,7 +36,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={git} alt="" />
+                  <img src={git} alt="Logo do GitHub" className="git w-100"/>
                 </a>
               </div>
             </div>
@@ -50,7 +50,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={git} alt="" />
+                  <img src={git} alt="Logo do GitHub" className="git w-100"/>
                 </a>
               </div>
             </div>
@@ -64,7 +64,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={git} alt="Logo do GitHub" />
+                  <img src={git} alt="Logo do GitHub" className="git w-100"/>
                 </a>
               </div>
             </div>

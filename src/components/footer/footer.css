@@ -1,60 +1,78 @@
 .footer {
   display: grid;
   align-items: center;
+  justify-content: space-evenly;
   background-color: #f0f0f0;
   border-top: 1px inset #8e59d7;
   width: 100%;
-  height: 20%;
+  padding: 2rem 5%;
+  box-sizing: border-box;
   grid-template-columns: 50% 50%;
+  gap: 10rem;
 }
+
 .section-left-footer {
-  justify-content: left;
-}
-.section-right-footer {
-  justify-content: right;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: flex-end;
+}
+
+.section-right-footer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.div-socials {
+  display: flex;
+  flex-flow: column nowrap;
   align-items: center;
   gap: 1rem;
-  right: 0;
 }
+
 .hFooter {
   font-weight: 800;
-  height: 3vh;
-  overflow-y: hidden;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
 }
-.a-phone{
+
+.a-phone {
   text-decoration: none;
   color: black;
   transition: 0.5s ease-in-out;
 }
-.a-phone:hover{
+
+.a-phone:hover {
   color: #260b4d;
   text-decoration: underline;
 }
-.div-socials{
-  display: flex;
 
-  gap: 1rem;
+
+
+.footer img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+  padding: 0;
 }
-img{
-  width: 28px;
-  height: 28px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-.img-insta{
-  width: 40px;
-  height: 35px;
-}
-img:hover{
+
+.footer img:hover {
   transform: scale(1.2);
-  transition: 0.5s ease-in-out;
+  filter: invert(13%) sepia(20%) saturate(5516%) hue-rotate(246deg) brightness(86%) contrast(112%);
 }
-@media screen {
+
+@media (max-width: 768px) {
   .footer {
-    padding: 2rem;
     display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+  .div-socials{
+    display: flex inline;
+    flex-flow: row;
   }
 }
