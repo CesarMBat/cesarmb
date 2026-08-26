@@ -15,12 +15,7 @@
 .section-left-who h1{
     text-align: center;
 }
-.section-left-who{
-    border-bottom: 1px solid #000;
-    border-right: 1px solid #000;
-    border-radius: 1rem;
-    padding: 1rem;
-}
+
 .section-right{
     overflow: hidden;
 

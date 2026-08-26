@@ -64,7 +64,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={git} alt="" />
+                  <img src={git} alt="Logo do GitHub" />
                 </a>
               </div>
             </div>

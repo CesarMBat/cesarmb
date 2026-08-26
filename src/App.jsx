@@ -49,7 +49,7 @@ function App() {
 
   return (
     <>
-      <Media query={"(min-width: 600px)"}>
+      <Media query={"(min-width: 1024px)"}>
         {(matches) => {
           return matches ? (
             <header className="header">
@@ -82,7 +82,7 @@ function App() {
                   </li>
                   <li
                     className="li-header"
-                    onClick={scrollToSecMob("ref_Swot")}
+                    onClick={() => scrollToSecMob("ref_Swot")}
                   >
                     <a href="#swot" className="a-nav">
                       {t("swot")}

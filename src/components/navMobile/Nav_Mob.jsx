@@ -13,7 +13,7 @@ const Ul = styled.ul`
   li {
     padding: 18px 10px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     flex-flow: column nowrap;
     background-color: #8e59d7;
     z-index: 1;
@@ -25,13 +25,30 @@ const Ul = styled.ul`
     width: 300px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
+    transition: transform 0.3s ease-in-out;
     li {
       color: #fff;
     }
     .a-mob-nav {
       text-decoration: none;
       color: #fff;
-      font-size: 1.5rem;
+      font-size: 1.25rem;
+      cursor: pointer;
+    }
+
+    .div-lang {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      padding: 18px 10px;
+      align-items: center;
+
+      .img-Flag {
+        width: 32px;
+        height: 22px;
+        cursor: pointer;
+      }
     }
   }
 `;

@@ -3,12 +3,19 @@
   align-items: center;
   background-color: #f0f0f0;
   border-top: 1px inset #8e59d7;
-  width: 100vw;
-  height: 20vh;
-  grid-template-columns: 20% 50%;
+  width: 100%;
+  height: 20%;
+  grid-template-columns: 50% 50%;
 }
 .section-left-footer {
   justify-content: left;
+}
+.section-right-footer {
+  justify-content: right;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  right: 0;
 }
 .hFooter {
   font-weight: 800;
@@ -23,6 +30,27 @@
 .a-phone:hover{
   color: #260b4d;
   text-decoration: underline;
+}
+.div-socials{
+  display: flex;
+
+  gap: 1rem;
+}
+img{
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.img-insta{
+  width: 40px;
+  height: 35px;
+}
+img:hover{
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
 }
 @media screen {
   .footer {

@@ -4,8 +4,8 @@
   "hab": "Skills",
   "proj": "Projects",
   "swot": "SWOT",
-  "pWho": "I'm César Morsoleto Batista, I'm 23 years old, and I'm passionate about programming. I have many hobbies, such as: hanging out with friends, playing video games, watching anime, listening to music, coding, playing with my dogs, playing TTRPG etc. In 2018, I entered the São Paulo State Technical School (ETESP), where I took the Informatics course, starting to learn about programming there. I am studying at FATECSP in Software Analysis and Development.",
-  "pObj": "The purpose of this portfolio is to be able to introduce myself to companies and other people, so they can get to know a little more about me. I will demonstrate my skills and repertoire on this page. With the guidance of Professor Ermeson, professor at the Institute of Social Opportunity.",
+  "pWho": "I'm César Morsoleto Batista, I'm 23 years old, and I'm passionate about programming. I have many hobbies, such as: hanging out with friends, playing video games, watching anime, listening to music, coding, playing with my dogs, playing TTRPG etc. In 2018, I entered the São Paulo State Technical School (ETESP), where I took the Informatics course, starting to learn about programming there. I am studying at FATEC-SP in Software Analysis and Development.",
+  "pObj": "I'am currently trying to enter in the area of Software Engineer, as a Intern. I have knowledge in HTML, CSS, JavaScript, Python, React and Angular. I love learning new languages.",
   "s": "Strengths",
   "w": "Weakness",
   "o": "Opportunities",
@@ -37,5 +37,4 @@
   "pProj4": "An old version of this website, made without React",
   "email" : "Email: cesar.morsoleto@gmail.com",
   "phone" : "Phone:"
-  
 }
