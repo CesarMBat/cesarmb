@@ -1,6 +1,23 @@
 import './footer.css'
-import socials from "../../assets/socials";
+import Socials from "../../assets/socials";
+import styled from 'styled-components';
 import { useTranslation } from "react-i18next";
+
+const StyledInsta = styled(Socials.a)`
+  fill: ${(props) => props.theme.svg};
+  transition: fill 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+`
+const StyledLinkedin = styled(Socials.b)`
+  fill: ${(props) => props.theme.svg};
+  transition: fill 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+`
+
 
 const Footer = () => {
 
@@ -16,11 +33,11 @@ const Footer = () => {
         </section>
         <section className='section-right-footer'>
           <div className='div-socials'>
-            <a href="https://www.linkedin.com/in/cesar-morsoleto-batista-3a5b4b1a9/" target='_blank' rel="noopener noreferrer">
-              <img className='img-link' src={socials.b} alt="LinkedIn" />
+            <a href="https://www.linkedin.com/in/cesar-morsoleto-batista/" target='_blank' rel="noopener noreferrer" className='a-Footer'>
+              <StyledLinkedin alt="LinkedIn" />
             </a>
-            <a href="https://www.instagram.com/czar_batista/" target='_blank' rel="noopener noreferrer">
-              <img className='img-insta' src={socials.a} alt="Instagram" />
+            <a href="https://www.instagram.com/czar_batista/" target='_blank' rel="noopener noreferrer" className='a-Footer'>
+              <StyledInsta alt="Instagram" />
             </a>
           </div>
         </section>

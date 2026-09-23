@@ -1,8 +1,8 @@
-import a from './insta.svg'
-import b from './linkedin.svg'
+import InstaIcon from './insta.svg?react'
+import LinkedinIcon from './linkedin.svg?react'
 
 const socials = {
-    a,
-    b
+    a: InstaIcon,
+    b: LinkedinIcon
 }
 export default socials 

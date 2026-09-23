@@ -38,7 +38,7 @@
 
 .a-phone {
   text-decoration: none;
-  color: #f0f0f0;
+  color: currentColor;
   transition: 0.5s ease-in-out;
 }
 
@@ -49,15 +49,16 @@
 
 
 
-.footer img {
+.a-Footer {
   width: 32px;
   height: 32px;
   object-fit: contain;
   transition: transform 0.3s ease-in-out;
   padding: 0;
+  color: currentColor;
 }
 
-.footer img:hover {
+.a-Footer:hover {
   transform: scale(1.2);
   filter: invert(13%) sepia(20%) saturate(5516%) hue-rotate(246deg) brightness(86%) contrast(112%);
 }

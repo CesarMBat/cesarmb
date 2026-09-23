@@ -15,6 +15,10 @@ const Nav = styled.nav`
   left: 0;
   z-index: 1000;
   box-sizing: border-border-box;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  
+  transition: background-color 0.3s ease;
 
   .logo {
     font-size: 1.3rem;

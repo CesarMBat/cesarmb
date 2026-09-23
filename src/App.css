@@ -12,9 +12,20 @@
   right: 0;
   z-index: 1000;
   margin: 0;
-  overflow: auto;
+  background-color: var(--header-bg, rgba(15, 15, 15, 0.75));
+  
+  /* Frosted glass blur effect */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  
+  transition: background-color 0.3s ease;
 }
 
+.header {
+  background-color: var(--header-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
 .section-left {
   display: flex;
   align-items: center;

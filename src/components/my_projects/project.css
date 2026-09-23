@@ -59,7 +59,7 @@ h2 {
     justify-content: center;
     align-items: center;
     width: auto;
-    color: var(--text);
+    color: currentColor;
 }
 
 .git:hover {

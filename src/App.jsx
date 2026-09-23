@@ -58,6 +58,8 @@ i18n.use(initReactI18next).init({
 function App() {
   const { t } = useTranslation();
 
+  const [lang, setLanguage] = useState("pt");
+  
   const [theme, setTheme] = useState("dark");
 
   const toggleTheme = () => {
@@ -89,7 +91,7 @@ function App() {
         <Media query={"(min-width: 1024px)"}>
           {(matches) => {
             return matches ? (
-              <header className="header">
+              <header className="header" dark-theme>
                 <section className="section-left">
                   <h1
                     className="h1-header"

@@ -15,7 +15,7 @@ const StyledGithubIcon = styled(GithubIcon)`
   }
 `;
 
-const Projects = (theme) => {
+const Projects = () => {
   const {t} = useTranslation()
   return (
     <div>
