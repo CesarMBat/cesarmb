@@ -2,7 +2,6 @@
   display: grid;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #f0f0f0;
   border-top: 1px inset #8e59d7;
   width: 100%;
   padding: 2rem 5%;
@@ -39,12 +38,12 @@
 
 .a-phone {
   text-decoration: none;
-  color: black;
+  color: #f0f0f0;
   transition: 0.5s ease-in-out;
 }
 
 .a-phone:hover {
-  color: #260b4d;
+  color: #8663b8;
   text-decoration: underline;
 }
 

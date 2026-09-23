@@ -43,6 +43,7 @@ h2 {
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
     align-items: center;
+    
     width: 100%;
     margin-top: 1rem;
 }
@@ -53,21 +54,15 @@ h2 {
     text-align: center;
 }
 
-.div-2 a {
+.a-nav {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.git {
-    height: auto;
-    max-height: 80px;
     width: auto;
-    max-width: 100%;
-    transition: transform 0.2s ease;
+    color: var(--text);
 }
 
-.git::hover {
+.git:hover {
     transform: scale(1.05)
 }
 

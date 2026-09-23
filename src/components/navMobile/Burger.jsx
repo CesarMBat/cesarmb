@@ -3,39 +3,39 @@ import styled from "styled-components";
 import Nav_Mob from "./Nav_Mob";
 
 const StyledBurger = styled.div`
-  width: 2rem;
-  height: 2rem;
-  position: fixed;
-  top: 15px;
-  right: 20px;
-  z-index: 20;
-  display: none;
-  @media (max-width: 820px) {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: column nowrap;
-  }
-  div {
     width: 2rem;
-    height: 0.25rem;
-    background-color: ${({ open }) => (open ? "#ccc" : "#333")};
-    border-radius: 10px;
-    transform-origin: 1px;
-    transition: all 0.3s linear;
-    &:nth-child(1) {
-      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+    height: 2rem;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 20;
+    display: none;
+    @media (max-width: 1024px) {
+      display: flex;
+      justify-content: space-around;
+      flex-flow: column nowrap;
     }
-    &:nth-child(2) {
-      transform: ${({ open }) => (open ? "translateX(100%)" : "translateX(0)")};
-      opacity: ${({ open }) => (open ? 0 : 1)};
+    div {
+      width: 2rem;
+      height: 0.25rem;
+      background-color: ${({ open }) => (open ? "#fff" : "#fff")};
+      border-radius: 10px;
+      transform-origin: 1px;
+      transition: all 0.3s linear;
+      &:nth-child(1) {
+        transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+      }
+      &:nth-child(2) {
+        transform: ${({ open }) => (open ? "translateX(100%)" : "translateX(0)")};
+        opacity: ${({ open }) => (open ? 0 : 1)};
+      }
+      &:nth-child(3) {
+        transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
+      }
     }
-    &:nth-child(3) {
-      transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
-    }
-  }
-`;
+  `;
 
-const Burger = ({onNav}) => {
+const Burger = ({ onNav, theme, toggleTheme, onChangeLanguage }) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -45,7 +45,13 @@ const Burger = ({onNav}) => {
         <div />
         <div />
       </StyledBurger>
-      <Nav_Mob open={open} onNav={onNav}/>
+      <Nav_Mob
+        open={open}
+        onNav={onNav}
+        theme={theme}
+        toggleTheme={toggleTheme}
+        onChangeLanguage={onChangeLanguage}
+      />
     </>
   );
 };

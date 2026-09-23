@@ -5,7 +5,6 @@ import styled from "styled-components";
 const Nav = styled.nav`
   width: 100%;
   height: 60px;
-  background-color: #f0f0f0;
   border-bottom: 1px inset #8e59d7;
   padding: 0 20px;
   display: flex;
@@ -25,11 +24,16 @@ const Nav = styled.nav`
     user-select: none;
   }
 `;
-const Navbar = ({onNav}) => {
+const Navbar = ({ onNav, theme, toggleTheme, onChangeLanguage }) => {
   return (
     <Nav>
       <div className="logo">César M Bat</div>
-      <Burger onNav={onNav}/>
+      <Burger
+        onNav={onNav}
+        theme={theme}
+        toggleTheme={toggleTheme}
+        onChangeLanguage={onChangeLanguage}
+      />
     </Nav>
   );
 };

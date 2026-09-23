@@ -1,9 +1,21 @@
 import React from "react";
 import "./project.css";
-import git from "../../assets/github.svg";
+import GithubIcon from "../../assets/github.svg?react";
+import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 
-const Projects = () => {
+const StyledGithubIcon = styled(GithubIcon)`
+  width: 100px;
+  height: 100px;
+  fill: ${(props) => props.theme.svg};
+  transition: fill 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 0.8;
+  }
+`;
+
+const Projects = (theme) => {
   const {t} = useTranslation()
   return (
     <div>
@@ -22,7 +34,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={git} alt="Logo do GitHub" className="git w-100"/>
+                  <StyledGithubIcon />
                 </a>
               </div>
             </div>
@@ -36,7 +48,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={git} alt="Logo do GitHub" className="git w-100"/>
+                  <StyledGithubIcon />
                 </a>
               </div>
             </div>
@@ -50,7 +62,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={git} alt="Logo do GitHub" className="git w-100"/>
+                  <StyledGithubIcon />
                 </a>
               </div>
             </div>
@@ -64,7 +76,7 @@ const Projects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={git} alt="Logo do GitHub" className="git w-100"/>
+                  <StyledGithubIcon />
                 </a>
               </div>
             </div>
